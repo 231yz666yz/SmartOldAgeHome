@@ -5,6 +5,20 @@
  Insert some values into the medication_stock table. 
  Practice SQL with the following:
  */
+ 
+ -- Create table ‘medication_stock’
+CREATE TABLE medication_stock (
+    medication_id INT PRIMARY KEY,
+    medication_name VARCHAR(100) NOT NULL,
+    quantity INT NOT NULL
+);
+ -- insert values into the new table
+INSERT INTO medication_stock (medication_id, medication_name, quantity) VALUES
+(1, 'Paracetamol', 150),
+(2, 'Aspirin', 80),
+(3, 'Lisinopril', 50),
+(4, 'Metformin', 120),
+(5, 'Atorvastatin', 30);
 
  -- Q!: List all patients name and ages 
 SELECT name, age FROM patients;
